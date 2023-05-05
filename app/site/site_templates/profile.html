@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %} 
-    <section class="bg-dark text-light text-center shadow mb-20">
+    <section class="bg-dark text-light text-center shadow h-100">
         <div class="container p-5 bg-dark">
             <div class="row">
                 <div class="d-md-flex bg-dark align-items-center justify-content-evenly">
@@ -11,21 +11,21 @@
         </div>
     </section>
 
-    <section class="text-center">
-    <div class="container p-10">
+    <section class="text-center bg-dark">
+    <div class="container">
         <div class="row"><br>
-            <h3 class="p-5">Here are your profile details</h3>
+            <h3 class=" text-light">Here are your profile details</h3>
             <ul class="list-group">
-                <li class="list-group-item">Email: {{ current_user.email }}</li>
-                <li class="list-group-item">Token: {{ current_user.token }} </li> 
+                <li class="list-group-item text-light bg-secondary">Email: {{ current_user.email }}</li>
+                <li class="list-group-item text-light bg-secondary">Token: {{ current_user.token }} </li> 
             </ul>
         </div>
-        <div class="row" style="margin-top: 20px;">
+        <div class="row bg-dark" style="margin-top: 20px;">
             <div class="col-4"></div>
-            <div class="col-3 p-10">
-                <img src="../../static/images/undraw_delivery_address_03n0.svg" class="d-flex align-items-center justify-content-center p-50 img-fluid" alt="">
+            <div class="col-3">
+                <img src="../../static/images/cloud.jpg" class="d-flex align-items-center px-50 img-fluid mb-5 mt-4" alt="">
             </div>
-            <div class="col-3"></div>
+            <div class="col-5 bg-dark"></div>
         </div>
     </div>
     </section>

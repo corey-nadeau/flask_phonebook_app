@@ -1,12 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %} 
-    <main class="container p-5">
+    <main class="container p-5 bg-dark text-light mw-100">
         <div class="row">
             <aside class="col-12 col-md-6">
                 <h2>Create Your Account</h2>
                 {% include 'forms.html' %} 
             </aside>
+        </div>
+        <div class="row bg-dark" style="margin-top: 40px;">
+            <div class="col-4"></div>
+            <div class="col-3 p-10">
+                <img src="../../static/images/undraw_delivery_address_03n0.svg" class="d-flex align-items-center justify-content-center p-50 img-fluid mb-5 pt-5 mt-4" alt="">
+            </div>
+            <div class="col-5 bg-dark"></div>
         </div>
     </main>
 {% endblock %} 
